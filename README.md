@@ -157,10 +157,3 @@ docker push your-account-id.dkr.ecr.your-region.amazonaws.com/health-records-api
    - Add an integration with your Lambda function
    - Deploy the API
 
-## Important Notes
-
-- The application uses Mangum to handle AWS Lambda events
-- Static files should be served from S3 or similar service
-- Database should be configured to use RDS or similar service
-- Ensure your Lambda function has appropriate IAM roles and permissions
-- Configure CORS settings in settings.py according to your needs 
