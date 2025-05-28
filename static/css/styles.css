@@ -1,0 +1,204 @@
+body {
+    background: url('../image/hospital-corridor.jpg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);  /* Reduced opacity for clearer background */
+    z-index: -1;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+    background: rgba(13, 110, 253, 0.95) !important;  /* Slightly transparent navbar */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white !important;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.85);  /* More opaque cards for better readability */
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-bottom: 2px solid rgba(13, 110, 253, 0.1);
+    padding: 1.25rem 1.5rem;
+}
+
+.card-header h3 {
+    margin: 0;
+    color: #0d6efd;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd 0%, #0043a8 100%);
+    border: none;
+    padding: 0.625rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0043a8 0%, #003380 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+}
+
+.form-control {
+    border: 2px solid #e9ecef;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+    background: white;
+}
+
+.form-label {
+    color: #495057;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+#dashboard {
+    margin-top: 2rem;
+}
+
+.health-record {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(13, 110, 253, 0.1);
+    border-radius: 1rem;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.health-record:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    border-color: rgba(13, 110, 253, 0.3);
+}
+
+.health-record h4 {
+    color: #0d6efd;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.patient-item {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(13, 110, 253, 0.1);
+    border-radius: 1rem;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.patient-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    border-color: rgba(13, 110, 253, 0.3);
+}
+
+.alert {
+    margin-top: 1rem;
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.modal-content {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 1rem 1rem 0 0;
+    border-bottom: 2px solid rgba(13, 110, 253, 0.1);
+    padding: 1.5rem;
+}
+
+.modal-title {
+    color: #0d6efd;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+#userNameDisplay {
+    color: #0d6efd;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+/* Additional Styles */
+.mb-4 {
+    margin-bottom: 2rem !important;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0d6efd;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0043a8;
+} 

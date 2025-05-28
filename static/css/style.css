@@ -1,0 +1,40 @@
+.health-record {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.health-record h4 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.health-record p {
+    margin: 0 0 8px 0;
+    color: #34495e;
+}
+
+.health-record small {
+    color: #7f8c8d;
+}
+
+.btn-group {
+    gap: 5px;
+}
+
+.edit-record-btn, .delete-record-btn {
+    padding: 4px 8px;
+    font-size: 0.875rem;
+}
+
+.edit-record-btn:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+.delete-record-btn:hover {
+    background-color: #c0392b;
+    color: white;
+} 
